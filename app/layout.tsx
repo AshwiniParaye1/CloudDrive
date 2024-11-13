@@ -10,8 +10,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Cloud Drive",
-  description:
-    "Cloud Drive - Seamless file storage, sharing, and access from wherever you go."
+  description: "Cloud Drive - The only storage solution you need."
 };
 
 export default function RootLayout({
