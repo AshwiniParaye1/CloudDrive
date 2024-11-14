@@ -7,11 +7,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <section className="bg-brand p-10">
         <div>
           <Image
-            src="/assets/icons/logo-full.svg"
+            src="/logo.png"
             alt="logo"
-            width={224}
-            height={82}
-            className="h-auto"
+            width={424}
+            height={92}
+            className="h-auto "
           />
 
           <div className="space-y-5 text-white">
