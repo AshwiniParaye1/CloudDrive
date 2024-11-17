@@ -45,9 +45,9 @@ export const createAccount = async ({
 }) => {
   const existingUser = await getUserByEmail(email);
 
-  const accoundId = await sendEmailOTP({ email });
+  const accountId = await sendEmailOTP({ email });
 
-  if (!accoundId) throw new Error("Failed to send OTP");
+  if (!accountId) throw new Error("Failed to send OTP");
 
   if (!existingUser) {
     const { databases } = await createAdminClient();
@@ -61,12 +61,12 @@ export const createAccount = async ({
         fullName,
         avatar:
           "https://www.google.com/imgres?q=avatar%20placeholder&imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2016%2F08%2F08%2F09%2F17%2Favatar-1577909_960_720.png&imgrefurl=https%3A%2F%2Fpixabay.com%2Fvectors%2Favatar-icon-placeholder-facebook-1577909%2F&docid=cyPowwVV5ZV6IM&tbnid=x3mZLbZEUtS7xM&vet=12ahUKEwj1juav6OKJAxWNUGwGHbRdM9YQM3oECGUQAA..i&w=720&h=720&hcb=2&ved=2ahUKEwj1juav6OKJAxWNUGwGHbRdM9YQM3oECGUQAA",
-        accountId: accoundId
+        accountId: accountId
       }
     );
   }
 
-  return parseStringify({ accoundId });
+  return parseStringify({ accountId });
 };
 
 export const verifySecret = async ({
