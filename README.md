@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cloud Drive
+
+A modern storage management and file-sharing platform built with Next.js 15 and Appwrite. Upload, organize, and share files effortlessly with a clean, responsive interface.
+
+## Features
+
+- **Secure Authentication**: User authentication powered by Appwrite
+- **Comprehensive File Management**: Upload, view, rename, and delete files seamlessly
+- **Seamless File Sharing**: Easily share files with other users
+- **Interactive Dashboard**: Monitor storage usage and recent activities
+- **Advanced Search**: Quickly find files with a global search functionality
+- **Smart Organization**: Sort files by date, name, or size
+- **Responsive Design**: Modern UI optimized for all devices
+
+## Tech Stack
+
+- **React 19**: Interactive and efficient UI development
+- **Next.js 15**: Production-ready framework with SSR and API routes
+- **Appwrite**: Backend-as-a-Service for authentication, database, and storage
+- **TailwindCSS**: Utility-first styling for fast and flexible design
+- **ShadCN**: Accessible and customizable UI component library
+- **TypeScript**: Ensures code reliability with static typing
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js
+- npm
+- Git
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/JavaScript-Mastery-Pro/storage_management_solution.git
+   cd storage_management_solution
+   ```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Configure environment variables:
+   Create a `.env.local` file in the root directory with the following:
+
+```bash
+
+NEXT_PUBLIC_APPWRITE_ENDPOINT="https://cloud.appwrite.io/v1"
+NEXT_PUBLIC_APPWRITE_PROJECT=""
+NEXT_PUBLIC_APPWRITE_DATABASE=""
+NEXT_PUBLIC_APPWRITE_USERS_COLLECTION=""
+NEXT_PUBLIC_APPWRITE_FILES_COLLECTION=""
+NEXT_PUBLIC_APPWRITE_BUCKET=""
+NEXT_APPWRITE_KEY=""
+
+```
+
+4. Set up Appwrite:
+
+```bash
+- Create a new project in the Appwrite Console
+- Configure authentication methods
+- Create a storage bucket for file uploads
+- Create database collections for user data
+- Update environment variables with Appwrite credentials
+```
+
+5. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Open `http://localhost:3000` in your browser to access the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Thank you for checking out Cloud Drive! If you have any questions or feedback, feel free to reach out.
 
-## Learn More
+Happy coding! 🚀
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Connect with me on [LinkedIn](https://www.linkedin.com/in/ashwini-paraye/).
